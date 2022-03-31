@@ -58,7 +58,7 @@ When not using Responsive widgets, you can run into issues with scaling like the
 
 ![Custom Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_2.png)
 
-Note: The following widgets are currently supported, but [we welcome pull requests](#) for new responsive widgets.
+Note: The following widgets are currently supported, but [we welcome widget requests](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=WidgetType) for new responsive widgets.
 
 |    Visual     |   Structural  |  Interactive  |    Platform   |
 | ------------- | ------------- | ------------- | ------------- |
