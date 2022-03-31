@@ -7,6 +7,7 @@ export 'responsive_widgets.dart';
 export 'visual/responsive_text.dart';
 export 'visual/responsive_card.dart';
 export 'visual/responsive_asset_image.dart';
+export 'visual/responsive_icon.dart';
 
 // STRUCTURAL
 export 'structural/responsive_container.dart';

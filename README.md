@@ -65,7 +65,7 @@ Note: The following widgets are currently supported, but [we welcome pull reques
 | AssetImage  | Container  | IconButton  | MaterialApp  |
 | Text  | Padding | FloatingActionButton  | CupertinoApp  |
 | Card |   | ButtonTheme  | AppBar |
-|   |   |   |  |
+| Icon  |   |   |  |
 |   |   |    |  |
 
 ## Getting started
@@ -334,6 +334,8 @@ The comparisons would look like the following:
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+### Package Support
+To support this repo, take a look at the [SUPPORT.md](https://github.com/the-mac/responsive_widgets_prefix/blob/main/SUPPORT.md) file.
+
+### Package Documentation
+To view the documentation on the package, [follow this link](https://pub.dev/documentation/responsive_widgets_prefix/latest/responsive_widgets_prefix/responsive_widgets_prefix-library.html)
