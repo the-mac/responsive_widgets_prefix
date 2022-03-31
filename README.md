@@ -312,22 +312,22 @@ The comparisons would look like the following:
 
 <table border="0" style="margin-left: auto; margin-right: auto;">
   <tr>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/android/samsung_galaxy_a50/counter_sample_4.png"></td>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/android/sony_xperia_1_ii/counter_sample_4.png"></td>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/ios/iphone_12_pro_max/counter_sample_4.png"></td>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/ios/ipad_pad_pro_11inches/counter_sample_4.png"></td>
+    <td><img width="280" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/android/samsung_galaxy_a50/counter_sample_4.png"></td>
+    <!-- <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/android/sony_xperia_1_ii/counter_sample_4.png"></td> -->
+    <td><img width="280" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/ios/iphone_12_pro_max/counter_sample_4.png"></td>
+    <td><img width="280" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/non-responsive/ios/ipad_pad_pro_11inches/counter_sample_4.png"></td>
   </tr>  
   <tr center>
     <td  align="center"><p>Samsung A50</p></td>
-    <td  align="center"><p>Sony Xperia 1 II</p></td>
+    <!-- <td  align="center"><p>Sony Xperia 1 II</p></td> -->
     <td  align="center"><p>iPhone 12 Max Pro</p></td>
     <td  align="center"><p>iPad Pro 11 Inches</p></td>
   </tr>
   <tr>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/android/samsung_galaxy_a50/counter_sample_4.png"></td>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/android/sony_xperia_1_ii/counter_sample_4.png"></td>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/ios/iphone_12_pro_max/counter_sample_4.png"></td>
-    <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/ios/ipad_pad_pro_11inches/counter_sample_4.png"></td>
+    <td><img width="280" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/android/samsung_galaxy_a50/counter_sample_4.png"></td>
+    <!-- <td><img width="180" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/android/sony_xperia_1_ii/counter_sample_4.png"></td> -->
+    <td><img width="280" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/ios/iphone_12_pro_max/counter_sample_4.png"></td>
+    <td><img width="280" src="https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/screenshots/responsive/ios/ipad_pad_pro_11inches/counter_sample_4.png"></td>
   </tr> 
 </table>
 
