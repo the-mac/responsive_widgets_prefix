@@ -20,10 +20,10 @@ void main() async {
           final main = app.setupMainWidget();
           final List<DeviceInfo> testDevices = [
             Devices.ios.iPhoneSE,
-            // Devices.ios.iPhone12ProMax,
-            // Devices.android.samsungGalaxyA50,
-            // Devices.ios.iPadPro11Inches,
-            // Devices.android.sonyXperia1II
+            Devices.ios.iPhone12ProMax,
+            Devices.android.samsungGalaxyA50,
+            Devices.ios.iPadPro11Inches,
+            Devices.android.sonyXperia1II
           ];
           
           final integrationTestGroups = ScreenIntegrationTestGroups(binding);
