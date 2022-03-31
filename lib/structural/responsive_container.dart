@@ -6,9 +6,6 @@ import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 class ResponsiveContainer extends ResponsiveStatelessWidget {
   
   final Widget? child;
-  final double? width;
-  final double? height;
-
   
   /// Constructs a responsive container, that accepts a child Widget.
   ///
@@ -25,8 +22,17 @@ class ResponsiveContainer extends ResponsiveStatelessWidget {
   ResponsiveContainer({
     Key? key,
     this.child,
-    this.width,
-    this.height,
+    AlignmentGeometry? alignment,
+    EdgeInsetsGeometry? padding,
+    Color? color,
+    Decoration? decoration,
+    Decoration? foregroundDecoration,
+    double? width,
+    double? height,
+    BoxConstraints? constraints,
+    EdgeInsetsGeometry? margin,
+    Matrix4? transform,
+    Clip clipBehavior = Clip.none,
     double scaleWatch = 0.8,
     double scaleSmallPhone = 1.0,
     double scaleMediumPhone = 1.0,
@@ -37,15 +43,6 @@ class ResponsiveContainer extends ResponsiveStatelessWidget {
     double scaleMediumDesktop = 4.0,
     double scaleLargeDesktop = 5.6,
     double scaleTelevision = 7.2,
-    AlignmentGeometry? alignment,
-    EdgeInsetsGeometry? padding,
-    Color? color,
-    Decoration? decoration,
-    Decoration? foregroundDecoration,
-    BoxConstraints? constraints,
-    EdgeInsetsGeometry? margin,
-    Matrix4? transform,
-    Clip clipBehavior = Clip.none,
   }) : super(
       scaleWatch: scaleWatch,
       scaleSmallPhone: scaleSmallPhone, 
@@ -64,6 +61,8 @@ class ResponsiveContainer extends ResponsiveStatelessWidget {
         .set('color', color)
         .set('decoration', decoration)
         .set('foregroundDecoration', foregroundDecoration)
+        .set('width', width)
+        .set('height', height)
         .set('constraints', constraints)
         .set('margin', margin)
         .set('transform', transform)
@@ -73,11 +72,23 @@ class ResponsiveContainer extends ResponsiveStatelessWidget {
   @override
   Widget getResponsiveWidget(BuildContext context, ScreenType screenType, double scale) {
 
+      double? newWidth;
+      double? newHeight;
       var hasConstraints = has('constraints');
-      var constraints = get('constraints');
+      var hasWidth = has('width');
+      var hasHeight = has('height');
 
-      var newWidth = hasConstraints ? constraints.maxWidth : width! * scale;
-      var newHeight = hasConstraints ? constraints.maxHeight : height! * scale;
+      if(hasConstraints) {
+        var constraints = get('constraints') as BoxConstraints;
+        newWidth = constraints.maxWidth * scale;
+        newHeight = constraints.maxHeight * scale;
+      } else if(hasWidth || hasHeight) {
+        newWidth = hasWidth ? get('width') * scale : null;
+        newHeight = hasHeight ? get('height') * scale : null;
+      } else {
+        newWidth = null;
+        newHeight = null;
+      }
 
       return Container(
           child: child,
