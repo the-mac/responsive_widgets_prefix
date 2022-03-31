@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ResponsiveText('You have pushed the button this many times:'),
-            ResponsiveText('$_counter', key: Key('counter-page-text'), style: Theme.of(context).textTheme.headline4, scaleMediumTablet: 4),
+            ResponsiveText('$_counter', key: const Key('counter-page-text'), style: Theme.of(context).textTheme.headline4, scaleMediumTablet: 4),
           ],
         ),
       ),
