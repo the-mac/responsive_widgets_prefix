@@ -4,10 +4,6 @@ import 'package:responsive_widgets_prefix/responsive_helper.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 
 class ResponsiveAssetImage extends ResponsiveStatelessWidget {
-  final String path;
-  final Size size;
-  final bool useBufferSize;
-  final Alignment alignment;
   
   /// Constructs a responsive asset image, that accepts a path String to and image asset.
   /// @param scaleWatch The responsive scale for watch devices (default: 0.1)
@@ -20,11 +16,13 @@ class ResponsiveAssetImage extends ResponsiveStatelessWidget {
   /// @param scaleMediumDesktop The responsive scale for medium desktop devices (default: 3.0)
   /// @param scaleLargeDesktop The responsive scale for large desktop devices (default: 3.6)
   /// @param scaleTelevision The responsive scale for TV devices (default: 4.2)
-  ResponsiveAssetImage(this.path, {
-    Key? key,
-    required this.size,
-    this.alignment = Alignment.center,
-    this.useBufferSize = true,
+  ResponsiveAssetImage(assetName, {
+    key,
+    bundle,
+    package,
+    required size,
+    alignment = Alignment.center,
+    useBufferSize = true,
     double scaleWatch = 0.1,
     double scaleSmallPhone = 1.0,
     double scaleMediumPhone = 1.0,
@@ -46,10 +44,24 @@ class ResponsiveAssetImage extends ResponsiveStatelessWidget {
     scaleMediumDesktop: scaleMediumDesktop,
     scaleLargeDesktop: scaleLargeDesktop, 
     scaleTelevision: scaleTelevision
-  );
+  ) {
+
+      set('key', key)
+      .set('bundle', bundle)
+      .set('assetName', assetName)
+      .set('package', package)
+      .set('size', size)
+      .set('alignment', alignment)
+      .set('useBufferSize', useBufferSize);
+
+  }
 
   @override
   Widget getResponsiveWidget(BuildContext context, ScreenType screenType, double scale) {
+
+      final Size size = get('size');
+      final bool useBufferSize = get('useBufferSize');
+      final Alignment alignment = get('alignment');
 
       var responsiveWidthTooSmall = size.width * scale <= 20;
       var newWidth = responsiveWidthTooSmall && useBufferSize ? size.width * scale + 20 : size.width * scale;
@@ -67,7 +79,11 @@ class ResponsiveAssetImage extends ResponsiveStatelessWidget {
         alignment: alignment,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(path),
+            image: AssetImage(
+              get('assetName'),
+              bundle: get('bundle'),
+              package: get('package')
+            ),
             fit: BoxFit.fill
           ),
         ),
