@@ -17,6 +17,8 @@ export 'structural/responsive_padding.dart';
 export 'interactive/responsive_fab.dart';
 export 'interactive/responsive_button_theme.dart';
 export 'interactive/responsive_icon_button.dart';
+export 'interactive/responsive_text_field.dart';
+export 'interactive/responsive_cupertino_text_field.dart';
 
 // PLATFORM
 export 'platform/responsive_app.dart';
