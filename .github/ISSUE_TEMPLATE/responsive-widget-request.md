@@ -1,19 +1,17 @@
 ---
 name: Responsive Widget Request
 about: I have a widget that should be responsive in my app
-title: ''
+title: 'WidgetType'
 labels: enhancement
 assignees: ''
 
 ---
 
-**What is the "Type" of the Widget you'd like to have made responsive?**
-
 **What category Is your widget request for? (mark with [x] for category)**
-[ ] Visual
-[ ] Structural
-[ ] Interactive
-[ ] Platform
+- [ ] Visual
+- [ ] Structural
+- [ ] Interactive
+- [ ] Platform
 
 **List the widget's attributes that can be scaled (size, width, height, radius, etc.)**
 
