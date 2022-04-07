@@ -6,6 +6,8 @@ When not using Responsive widgets, you can run into issues with scaling like the
 
 ### Non Responsive Text
 
+![Non Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_0.png)
+
 ```dart
           ...
           children: <Widget>[
@@ -19,11 +21,11 @@ When not using Responsive widgets, you can run into issues with scaling like the
           ],
 
 ```
-
-![Non Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_0.png)
 
 ### Default ResponsiveText
 
+![Default Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_1.png)
+
 ```dart
           ...
           children: <Widget>[
@@ -38,9 +40,10 @@ When not using Responsive widgets, you can run into issues with scaling like the
 
 ```
 
-![Default Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_1.png)
-
 ### Customized ResponsiveText (scaleMediumTablet)
+
+![Custom Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_2.png)
+
 ```dart
           ...
           children: <Widget>[
@@ -56,9 +59,7 @@ When not using Responsive widgets, you can run into issues with scaling like the
 
 ```
 
-![Custom Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_2.png)
-
-Note: The following widgets are currently supported, but [we welcome widget requests](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=WidgetType) for new responsive widgets.
+Note: The widgets below are currently supported, but [we welcome widget requests](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=WidgetType) for new responsive widgets.
 
 |    Visual     |   Structural  |  Interactive  |    Platform   |
 | ------------- | ------------- | ------------- | ------------- |
@@ -66,7 +67,14 @@ Note: The following widgets are currently supported, but [we welcome widget requ
 | Text  | Padding | FloatingActionButton  | CupertinoApp  |
 | Card |   | ButtonTheme  | AppBar |
 | Icon  |   |   |  |
-|   |   |    |  |
+
+Note: The following widgets are currently not supported, but click on the link below to create an issue for a new responsive widget request.
+
+|    Visual     |  Interactive  |
+| ------------- | ------------- |
+|  [CircularProgressIndicator](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=CircularProgressIndicator) | [Checkbox](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=Checkbox)
+| [Tooltip](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=Tooltip)  | [FormField](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=FormField)|
+| [CupertinoActivityIndicator](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=CupertinoActivityIndicator) | [CupertinoButton](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=CupertinoButton)|
 
 ## Getting started
 
@@ -158,7 +166,7 @@ Note: Alternatively, if you are using a CupertinoApp the same Responsive prefix 
 ## Usage
 
 Our first example will be the Counter Sample project. With this project we can integrate the Responsive 
-Widgets prefix to scale the UI, for the appropriate scren size (and preview the results).
+Widgets prefix to scale the UI, for the appropriate screen size (and preview the results).
 
 ### Create platforms file (lib/platforms.dart)
 ```dart
