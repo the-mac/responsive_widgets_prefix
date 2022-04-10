@@ -2,6 +2,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+/// The screen type is set based upon the provided width in ResponsiveHelper.setupScreenType
 enum ScreenType {
     None,
     Watch,
@@ -16,6 +17,10 @@ enum ScreenType {
     Television,
 }
 
+/// The Responsive Helper class manages the device type and updates based upon the provided screen size. It
+/// is initialized in the ResponsiveMaterialApp and ResponsiveCupertinoApp constructors. It also allows for
+/// manual updates with the testingScreenType static member, but only after a call to the 
+/// ResponsiveHelper.updateTestingScreenType() method.
 class ResponsiveHelper {
 
   static ResponsiveHelper? _instance;
