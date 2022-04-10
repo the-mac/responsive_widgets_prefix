@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 
+/// Responsive Icon is a wrapper around [Icon], that allows for scaling of the icon's
+/// size. It does this by extending ResponsiveStatelessWidget,
+/// and assigning a scale for different device sizes.
 class ResponsiveIcon extends ResponsiveStatelessWidget {
   
   /// Constructs a responsive asset image, that accepts a path String to and image asset.

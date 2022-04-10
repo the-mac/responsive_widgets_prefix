@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 
-enum ImageType { defaultImage, networkImage, fileImage, assetImage,  memoryImage }
+enum _ImageType { defaultImage, networkImage, fileImage, assetImage,  memoryImage }
 
 abstract class _ResponsiveImage extends ResponsiveStatelessWidget {
   _ResponsiveImage({
@@ -34,6 +34,9 @@ abstract class _ResponsiveImage extends ResponsiveStatelessWidget {
   ) {}
 }
 
+/// Responsive Image is a wrapper around [Image], that allows for scaling of the image's
+/// width, height and scale. It does this by extending ResponsiveStatelessWidget,
+/// and assigning a scale for different device sizes.
 class ResponsiveImage extends _ResponsiveImage {
   
   /// Constructs a responsive asset image, that accepts a path String to and image asset.
@@ -71,7 +74,7 @@ class ResponsiveImage extends _ResponsiveImage {
   }) : super() {
 
     set('key', key)
-    .set('imageType', ImageType.defaultImage)
+    .set('imageType', _ImageType.defaultImage)
     .set('image', image)
     .set('frameBuilder', frameBuilder)
     .set('loadingBuilder', loadingBuilder)
@@ -90,8 +93,7 @@ class ResponsiveImage extends _ResponsiveImage {
     .set('matchTextDirection', matchTextDirection)
     .set('gaplessPlayback', gaplessPlayback)
     .set('isAntiAlias', isAntiAlias)
-    .set('filterQuality', filterQuality)
-    ;
+    .set('filterQuality', filterQuality);
 
   }
 
@@ -153,7 +155,7 @@ class ResponsiveImage extends _ResponsiveImage {
   }) : super() {
 
     set('key', key)
-    .set('imageType', ImageType.networkImage)
+    .set('imageType', _ImageType.networkImage)
     .set('frameBuilder', frameBuilder)
     .set('loadingBuilder', loadingBuilder)
     .set('errorBuilder', errorBuilder)
@@ -173,8 +175,7 @@ class ResponsiveImage extends _ResponsiveImage {
     .set('isAntiAlias', isAntiAlias)
     .set('filterQuality', filterQuality)
     .set('cacheWidth', cacheWidth)
-    .set('cacheHeight', cacheHeight)
-    ;
+    .set('cacheHeight', cacheHeight);
 
   }
   
@@ -234,7 +235,7 @@ class ResponsiveImage extends _ResponsiveImage {
   }) : super() {
 
     set('key', key)
-    .set('imageType', ImageType.fileImage)
+    .set('imageType', _ImageType.fileImage)
     .set('file', file)
     .set('scale', scale)
     .set('frameBuilder', frameBuilder)
@@ -255,8 +256,7 @@ class ResponsiveImage extends _ResponsiveImage {
     .set('isAntiAlias', isAntiAlias)
     .set('filterQuality', filterQuality)
     .set('cacheWidth', cacheWidth)
-    .set('cacheHeight', cacheHeight)
-    ;
+    .set('cacheHeight', cacheHeight);
 
   }
   
@@ -414,7 +414,7 @@ class ResponsiveImage extends _ResponsiveImage {
 
     set('key', key)
     .set('name', name)
-    .set('imageType', ImageType.assetImage)
+    .set('imageType', _ImageType.assetImage)
     .set('frameBuilder', frameBuilder)
     .set('bundle', bundle)
     .set('errorBuilder', errorBuilder)
@@ -434,8 +434,7 @@ class ResponsiveImage extends _ResponsiveImage {
     .set('isAntiAlias', isAntiAlias)
     .set('filterQuality', filterQuality)
     .set('cacheWidth', cacheWidth)
-    .set('cacheHeight', cacheHeight)
-    ;
+    .set('cacheHeight', cacheHeight);
 
   }
   
@@ -495,7 +494,7 @@ class ResponsiveImage extends _ResponsiveImage {
   }) : super() {
 
     set('key', key)
-    .set('imageType', ImageType.memoryImage)
+    .set('imageType', _ImageType.memoryImage)
     .set('bytes', bytes)
     .set('scale', scale)
     .set('frameBuilder', frameBuilder)
@@ -516,17 +515,14 @@ class ResponsiveImage extends _ResponsiveImage {
     .set('isAntiAlias', isAntiAlias)
     .set('filterQuality', filterQuality)
     .set('cacheWidth', cacheWidth)
-    .set('cacheHeight', cacheHeight)
-    ;
+    .set('cacheHeight', cacheHeight);
 
   }
 
-  Widget _getImageWidget(ImageType imageType, ScreenType screenType, double scale) {
+  Widget _getImageWidget(_ImageType imageType, ScreenType screenType, double scale) {
 
       double? newWidth;
       double? newHeight;
-      double? width;
-      double? height;
 
       if(has('width')) {
         newWidth = get('width') * scale;
@@ -535,15 +531,9 @@ class ResponsiveImage extends _ResponsiveImage {
       if(has('height')) {
         newHeight = get('height') * scale;
       }
-    
-      print('scale: $scale');
-      print('width: ${get('width')}');
-      print('height: ${get('height')}');
-      print('newWidth: $newWidth');
-      print('newHeight: $newHeight');
 
       switch (imageType) {
-        case ImageType.defaultImage:
+        case _ImageType.defaultImage:
           return Image(
             key : get('key'),
             image: get('image'),
@@ -565,7 +555,7 @@ class ResponsiveImage extends _ResponsiveImage {
             isAntiAlias : get('isAntiAlias'),
             filterQuality : get('filterQuality'),
           );
-        case ImageType.networkImage:
+        case _ImageType.networkImage:
           return Image.network(
             get('src'),
             key : get('key'),
@@ -591,7 +581,7 @@ class ResponsiveImage extends _ResponsiveImage {
             cacheWidth : get('cacheWidth'),
             cacheHeight : get('cacheHeight'),
           );
-        case ImageType.fileImage:
+        case _ImageType.fileImage:
           return Image.file(
             get('file'),
             key : get('key'),
@@ -616,7 +606,7 @@ class ResponsiveImage extends _ResponsiveImage {
             cacheWidth : get('cacheWidth'),
             cacheHeight : get('cacheHeight'),
           );
-        case ImageType.assetImage:
+        case _ImageType.assetImage:
           return Image.asset(
             get('name'),
             bundle : get('bundle'),
@@ -642,7 +632,7 @@ class ResponsiveImage extends _ResponsiveImage {
             cacheWidth : get('cacheWidth'),
             cacheHeight : get('cacheHeight'),
           );
-        case ImageType.memoryImage:
+        case _ImageType.memoryImage:
           return Image.memory(                    
             get('bytes'),
             key : get('key'),

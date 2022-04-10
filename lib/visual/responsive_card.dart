@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 
+/// Responsive Card is a wrapper around [Card], that allows for scaling of the card's
+/// margin. It does this by extending ResponsiveStatelessWidget,
+/// and assigning a scale for different device sizes.
 class ResponsiveCard extends ResponsiveStatelessWidget {
   
   Widget? child;

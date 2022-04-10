@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 
+/// Responsive Asset Image is a wrapper around [AssetImage], that allows for scaling of the asset image's
+/// surrounding container. It does this by extending ResponsiveStatelessWidget, wrapping with a Container
+/// and assigning a scale for different device sizes.
 class ResponsiveAssetImage extends ResponsiveStatelessWidget {
   
   /// Constructs a responsive asset image, that accepts a path String to and image asset.
