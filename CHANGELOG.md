@@ -1,10 +1,15 @@
+## 0.0.4
+
+* Updated documentation for the visual widgets
+* Fixed maxLengthEnforced deprecated warnings
+* Added "Image" ResponsiveWidget
+
 ## 0.0.3
 
 * Updated ResponsiveHelper for Testing
 * Added "CupertinoTextField" ResponsiveWidget
 * Added "TextField" ResponsiveWidget
 * Fixed "Responsive Asset Image missing bundle, package keys"
-* Adding documentation
 
 ## 0.0.2
 

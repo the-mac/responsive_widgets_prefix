@@ -66,7 +66,8 @@ Note: The widgets below are currently supported, but [we welcome widget requests
 | AssetImage  | Container  | IconButton  | MaterialApp  |
 | Text  | Padding | FloatingActionButton  | CupertinoApp  |
 | Card |   | ButtonTheme  | AppBar |
-| Icon  |   |   |  |
+| Icon  |   | TextField |  |
+| Image  |   | CupertinoTextField |  |
 
 Note: The following widgets are currently not supported, but click on the link below to create an issue for a new responsive widget request.
 
