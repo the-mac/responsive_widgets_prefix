@@ -50,13 +50,7 @@ class ResponsiveTextField extends ResponsiveStatelessWidget {
     minLines,
     expands = false,
     maxLength,
-    @Deprecated(
-      'Use maxLengthEnforcement parameter which provides more specific '
-      'behavior related to the maxLength limit. '
-      'This feature was deprecated after v1.25.0-5.0.pre.',
-    )
-    maxLengthEnforced = true,
-    maxLengthEnforcement,
+    maxLengthEnforcement = true,
     onChanged,
     onEditingComplete,
     onSubmitted,
@@ -132,7 +126,6 @@ class ResponsiveTextField extends ResponsiveStatelessWidget {
           .set('minLines', minLines)
           .set('expands', expands)
           .set('maxLength', maxLength)
-          .set('maxLengthEnforced', maxLengthEnforced)
           .set('maxLengthEnforcement', maxLengthEnforcement)
           .set('onChanged', onChanged)
           .set('onEditingComplete', onEditingComplete)
@@ -224,7 +217,6 @@ class ResponsiveTextField extends ResponsiveStatelessWidget {
           minLines : get('minLines'),
           expands : get('expands'),
           maxLength : get('maxLength'),
-          maxLengthEnforced : get('maxLengthEnforced'),
           maxLengthEnforcement : get('maxLengthEnforcement'),
           onChanged : get('onChanged'),
           onEditingComplete : get('onEditingComplete'),
