@@ -31,7 +31,7 @@ abstract class _ResponsiveImage extends ResponsiveStatelessWidget {
     scaleMediumDesktop: scaleMediumDesktop,
     scaleLargeDesktop: scaleLargeDesktop, 
     scaleTelevision: scaleTelevision
-  ) {}
+  );
 }
 
 /// Responsive Image is a wrapper around [Image], that allows for scaling of the image's

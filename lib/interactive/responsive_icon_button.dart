@@ -6,7 +6,7 @@ import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 class ResponsiveIconButton extends ResponsiveStatelessWidget {
   final Icon icon;
   final double iconSize;
-  late VoidCallback onPressed;
+  final VoidCallback onPressed;
   
   /// Constructs a responsive asset image, that accepts a path String to and image asset.
   /// @param scaleWatch The responsive scale for watch devices (default: 0.1)
@@ -39,16 +39,16 @@ class ResponsiveIconButton extends ResponsiveStatelessWidget {
     String? tooltip,
     bool enableFeedback = true,
     BoxConstraints? constraints,
-    double scaleWatch: 0.1,
-    double scaleSmallPhone: 1.0,
-    double scaleMediumPhone: 1.0,
-    double scaleLargePhone: 1.5,
-    double scaleSmallTablet: 1.8,
-    double scaleMediumTablet: 2.0,
-    double scaleLargeTablet: 2.5,
-    double scaleMediumDesktop: 3.0,
-    double scaleLargeDesktop: 3.6,
-    double scaleTelevision: 4.2,
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
   }) : super(
     scaleWatch: scaleWatch,
     scaleSmallPhone: scaleSmallPhone, 

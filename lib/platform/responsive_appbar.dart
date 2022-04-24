@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 
@@ -17,10 +18,10 @@ class ResponsiveAppBar extends AppBar {
     double? elevation,
     ShapeBorder? shape,
     Color? backgroundColor,
-    Brightness? brightness,
+    SystemUiOverlayStyle? systemUiOverlayStyle,
     IconThemeData? iconTheme,
     IconThemeData? actionsIconTheme,
-    TextTheme? textTheme,
+    TextStyle? titleTextStyle,
     bool primary = true,
     bool centerTitle = true,
     bool excludeHeaderSemantics = false,
@@ -38,10 +39,10 @@ class ResponsiveAppBar extends AppBar {
     elevation: elevation,
     shape: shape,
     backgroundColor: backgroundColor,
-    brightness: brightness,
+    systemOverlayStyle: systemUiOverlayStyle,
     iconTheme: iconTheme,
     actionsIconTheme: actionsIconTheme,
-    textTheme: textTheme,
+    titleTextStyle: titleTextStyle,
     primary: !ResponsiveHelper.currently(ScreenType.Watch),
     centerTitle: centerTitle,
     excludeHeaderSemantics: excludeHeaderSemantics,

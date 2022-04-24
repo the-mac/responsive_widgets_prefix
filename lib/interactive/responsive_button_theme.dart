@@ -18,6 +18,7 @@ class ResponsiveButtonTheme extends ResponsiveStatelessWidget {
   /// @param scaleMediumDesktop The responsive scale for medium desktop devices (default: 3.0)
   /// @param scaleLargeDesktop The responsive scale for large desktop devices (default: 3.6)
   /// @param scaleTelevision The responsive scale for TV devices (default: 4.2)
+  // ignore: use_key_in_widget_constructors
   ResponsiveButtonTheme({
     Key? key,
     ButtonTextTheme textTheme = ButtonTextTheme.normal,

@@ -9,7 +9,7 @@ import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 /// and assigning a scale for different device sizes.
 class ResponsiveCard extends ResponsiveStatelessWidget {
   
-  Widget? child;
+  final Widget? child;
   
   /// Constructs a responsive padding, that accepts a child Widget.
   ///
