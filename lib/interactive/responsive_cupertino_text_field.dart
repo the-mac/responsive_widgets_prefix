@@ -86,7 +86,7 @@ class ResponsiveCupertinoTextField extends ResponsiveStatelessWidget {
     minLines,
     expands = false,
     maxLength,
-    maxLengthEnforcement = true,
+    maxLengthEnforcement,
     onChanged,
     onEditingComplete,
     onSubmitted,
@@ -196,10 +196,8 @@ class ResponsiveCupertinoTextField extends ResponsiveStatelessWidget {
   @override
   Widget getResponsiveWidget(BuildContext context, ScreenType screenType, double scale) {
 
-      double height = 1.0;
       double fontSize = 0.0;
       double? newFontSize;
-      double? newHeight;
 
       TextStyle defaultStyle = DefaultTextStyle.of(context).style;
       TextStyle responsiveStyle = DefaultTextStyle.of(context).style;
@@ -213,20 +211,10 @@ class ResponsiveCupertinoTextField extends ResponsiveStatelessWidget {
       } else {
         fontSize = defaultStyle.fontSize!;
       }
-
-      if(responsiveStyle.height != null) {
-        height = responsiveStyle.height!;
-      } else if(defaultStyle.height != null) {
-        height = defaultStyle.height!;
-      }
       
       newFontSize = fontSize * scale;
-      newHeight = height * scale;
 
-      print('newFontSize: $newFontSize');
-      print('newHeight: $newHeight');
-
-      responsiveStyle = responsiveStyle.copyWith(fontSize: newFontSize);//, height: newHeight);
+      responsiveStyle = responsiveStyle.copyWith(fontSize: newFontSize);
 
       return CupertinoTextField(
           key : get('key'),
