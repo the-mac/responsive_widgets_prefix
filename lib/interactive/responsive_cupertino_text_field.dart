@@ -31,6 +31,9 @@ const BoxDecoration _kDefaultRoundedBorderDecoration = BoxDecoration(
   borderRadius: BorderRadius.all(Radius.circular(5.0)),
 );
 
+/// Responsive Cupertino Text Field is a wrapper around [CupertinoTextField], that allows for scaling of the text field's
+/// height and text size. It does this by extending ResponsiveStatelessWidget,
+/// and assigning a scale for different device sizes.
 class ResponsiveCupertinoTextField extends ResponsiveStatelessWidget {
 
   /// {@macro flutter.material.textfield.onTap}

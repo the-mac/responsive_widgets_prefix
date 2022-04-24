@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 
+/// Responsive Checkbox is a wrapper around [Checkbox], that allows for scaling of the checkbox's
+/// size with a Transform wrapper. It does this by extending ResponsiveStatelessWidget,
+/// and assigning a scale for different device sizes.
 class ResponsiveCheckbox extends ResponsiveStatelessWidget {
 
   /// {@macro flutter.material.checkbox.onChanged}

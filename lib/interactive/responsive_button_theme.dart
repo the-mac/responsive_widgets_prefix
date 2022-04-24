@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_widgets_prefix/responsive_widgets.dart';
 import 'package:responsive_widgets_prefix/responsive_helper.dart';
 
+/// Responsive Button Theme is a wrapper around [ButtonTheme], that allows for scaling of the button's
+/// height and width. It does this by extending ResponsiveStatelessWidget,
+/// and assigning a scale for different device sizes.
 class ResponsiveButtonTheme extends ResponsiveStatelessWidget {
   
   final Widget? child;
