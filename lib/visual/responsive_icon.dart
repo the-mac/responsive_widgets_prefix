@@ -26,16 +26,16 @@ class ResponsiveIcon extends ResponsiveStatelessWidget {
     color,
     semanticLabel,
     textDirection,
-    double scaleWatch: 0.1,
-    double scaleSmallPhone: 1.0,
-    double scaleMediumPhone: 1.0,
-    double scaleLargePhone: 1.5,
-    double scaleSmallTablet: 1.8,
-    double scaleMediumTablet: 2.0,
-    double scaleLargeTablet: 2.5,
-    double scaleMediumDesktop: 3.0,
-    double scaleLargeDesktop: 3.6,
-    double scaleTelevision: 4.2,
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
   }) : super(
     scaleWatch: scaleWatch,
     scaleSmallPhone: scaleSmallPhone, 
@@ -62,18 +62,14 @@ class ResponsiveIcon extends ResponsiveStatelessWidget {
       double? iconSize = 0.0;
       var hasSize = has('size');
 
-      print('hasSize: $hasSize');
-
       if(hasSize) {
           iconSize = get('size');
       } else {
           final IconThemeData iconTheme = IconTheme.of(context);
           iconSize = iconTheme.size;
       }
-      print('iconSize: $iconSize');
 
       var newIconSize = iconSize! * scale;
-      print('newIconSize: $newIconSize');
     
       return Icon(
         get('icon'),
