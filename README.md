@@ -1,5 +1,9 @@
 Responsive Widgets Prefix allows you to add the "Responsive" prefix to any widget that needs scaling or font size increases (for varying device screen sizes).
 
+<p align="center">
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix"><img src="https://img.shields.io/pub/v/responsive_widgets_prefix.svg"></a>
+</p>
+
 ## Features
 
 When not using Responsive widgets, you can run into issues with scaling like the following:
@@ -23,6 +27,7 @@ When not using Responsive widgets, you can run into issues with scaling like the
 ```
 
 ### Default ResponsiveText
+When using Responsive Widgets Prefix, you can scale effectively, and  customize your scale amount as well.
 
 ![Default Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_1.png)
 
@@ -41,6 +46,8 @@ When not using Responsive widgets, you can run into issues with scaling like the
 ```
 
 ### Customized ResponsiveText (scaleMediumTablet)
+
+Here the scaleMediumTablet customization is added to make the counter text even larger on Medium Tablet (iPad / Nexus 10 / and more) screen sizes.
 
 ![Custom Responsive Setup](https://raw.githubusercontent.com/the-mac/responsive_widgets_prefix/main/media/responsive_widgets_2.png)
 
@@ -61,13 +68,13 @@ When not using Responsive widgets, you can run into issues with scaling like the
 
 Note: The widgets below are currently supported, but [we welcome widget requests](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=WidgetType) for new responsive widgets.
 
-|    Visual     |   Structural  |  Interactive  |    Platform   |
-| ------------- | ------------- | ------------- | ------------- |
-| AssetImage  | Container  | IconButton  | MaterialApp  |
-| Text  | Padding | FloatingActionButton  | CupertinoApp  |
-| Card |   | ButtonTheme  | AppBar |
-| Icon  |   | TextField |  |
-| Image  |   | CupertinoTextField |  |
+|    Visual     |    Visual     |  Interactive  |  Interactive  |   Structural  |    Platform   |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| AssetImage    | Image         | IconButton    | Switch        |  Container    | MaterialApp   |
+| Text          | Icon          | Checkbox      | FAButton (FAB)|  Padding      | CupertinoApp  |
+| Card          | CircleAvatar  | ButtonTheme   | TextFormField |               | AppBar |
+|               |               | Slider        | TextField     | 
+|               |               | TextButton    | CupertinoTextField |  |
 
 Note: The following widgets are currently not supported, but click on the link below to create an issue for a new responsive widget request.
 

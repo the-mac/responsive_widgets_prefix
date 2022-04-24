@@ -1,3 +1,13 @@
+## 0.0.5
+
+* Added "ButtonTheme" ResponsiveWidget
+* Added "TextButton" ResponsiveWidget
+* Added "Slider" ResponsiveWidget
+* Added "Switch" ResponsiveWidget
+* Added "Checkbox" ResponsiveWidget
+* Added "TextFormField" ResponsiveWidget
+* Added "CircularAvatar" ResponsiveWidget
+
 ## 0.0.4
 
 * Updated documentation for the visual widgets

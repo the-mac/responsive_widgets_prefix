@@ -154,7 +154,7 @@ packages:
       name: integration_test_helper
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.4"
+    version: "0.0.8"
   integration_test_preview:
     dependency: "direct dev"
     description:
@@ -273,7 +273,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.4"
+    version: "0.0.5"
   shared_preferences:
     dependency: transitive
     description:
@@ -418,7 +418,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.5.0"
+    version: "2.5.1"
   xdg_directories:
     dependency: transitive
     description:
