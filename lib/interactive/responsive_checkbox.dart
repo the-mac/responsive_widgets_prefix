@@ -28,7 +28,7 @@ class ResponsiveCheckbox extends ResponsiveStatelessWidget {
     Key? key,
     required bool? value,
     bool tristate = false,
-    required ValueChanged<bool?>? this.onChanged,
+    required ValueChanged? this.onChanged,
     MouseCursor? mouseCursor,
     Color? activeColor,
     MaterialStateProperty<Color?>? fillColor,

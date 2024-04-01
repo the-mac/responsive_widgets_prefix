@@ -50,7 +50,7 @@ class ResponsiveTextField extends ResponsiveStatelessWidget {
     minLines,
     expands = false,
     maxLength,
-    maxLengthEnforcement = true,
+    maxLengthEnforcement,
     onChanged,
     onEditingComplete,
     onSubmitted,

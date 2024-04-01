@@ -29,6 +29,12 @@ class PlatformWidget extends StatefulWidget {
       return _defaultPlatform;
   }
 
+  static get isLarger {
+      return _defaultPlatform == TargetPlatform.linux
+        || _defaultPlatform == TargetPlatform.macOS
+        || _defaultPlatform == TargetPlatform.windows;
+  }
+
   static get isAndroid {
       return _defaultPlatform == TargetPlatform.android;
   }

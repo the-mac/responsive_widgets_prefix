@@ -94,7 +94,7 @@ class ResponsiveCupertinoTextField extends ResponsiveStatelessWidget {
     onEditingComplete,
     onSubmitted,
     inputFormatters,
-    enabled,
+    enabled = true,
     cursorWidth = 2.0,
     cursorHeight,
     cursorRadius = const Radius.circular(2.0),

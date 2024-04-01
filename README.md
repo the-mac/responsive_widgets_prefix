@@ -1,8 +1,18 @@
-Responsive Widgets Prefix allows you to add the "Responsive" prefix to any widget that needs scaling or font size increases (for varying device screen sizes).
+<p align="center">
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix"><img src="https://img.shields.io/pub/v/responsive_widgets_prefix.svg"></a>
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://img.shields.io/pub/popularity/responsive_widgets_prefix?logo=dart"></a>
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/likes"><img src="https://img.shields.io/pub/likes/responsive_widgets_prefix?logo=dart"></a>
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://img.shields.io/pub/points/responsive_widgets_prefix?logo=dart"></a>
+</p>
 
 <p align="center">
   <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix"><img src="https://img.shields.io/pub/v/responsive_widgets_prefix.svg"></a>
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://badges.bar/responsive_widgets_prefix/likes"></a>
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://badges.bar/responsive_widgets_prefix/popularity"></a>
+  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://badges.bar/responsive_widgets_prefix/pub%20points"></a>
 </p>
+
+Responsive Widgets Prefix allows you to add the "Responsive" prefix to any widget that needs scaling or font size increases (for varying device screen sizes).
 
 ## Features
 

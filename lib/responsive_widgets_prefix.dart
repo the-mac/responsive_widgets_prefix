@@ -10,6 +10,7 @@ export 'visual/responsive_asset_image.dart';
 export 'visual/responsive_image.dart';
 export 'visual/responsive_icon.dart';
 export 'visual/responsive_circle_avatar.dart';
+export 'visual/responsive_progress_indicator.dart';
 
 // STRUCTURAL
 export 'structural/responsive_container.dart';

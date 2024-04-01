@@ -160,7 +160,7 @@ abstract class ResponsiveStatefulWidget extends StatefulWidget {
     }
 
     bool has(String key) { return _attributeMap.containsKey(key) && _attributeMap[key] != null; }
-    dynamic get(String key) { return _attributeMap[key]; }
+    dynamic get(String key, {dynamic defaultVal = null}) { return _attributeMap[key] ?? defaultVal; }
     ResponsiveStatefulWidget set(String key, dynamic value) {
       _attributeMap[key] = value;
       return this;

@@ -44,7 +44,7 @@ class ResponsiveText extends ResponsiveStatelessWidget {
     Locale? locale,
     bool? softWrap,
     TextOverflow? overflow,
-    double? textScaleFactor,
+    TextScaler? textScaler,
     int? maxLines,
     String? semanticsLabel,
     TextWidthBasis? textWidthBasis,
@@ -69,7 +69,7 @@ class ResponsiveText extends ResponsiveStatelessWidget {
       .set('locale', locale)
       .set('softWrap', softWrap)
       .set('overflow', overflow)
-      .set('textScaleFactor', textScaleFactor)
+      .set('textScaler', textScaler)
       .set('maxLines', maxLines)
       .set('semanticsLabel', semanticsLabel)
       .set('textWidthBasis', textWidthBasis)
@@ -96,7 +96,7 @@ class ResponsiveText extends ResponsiveStatelessWidget {
     }
 
     if(useCaptionStyle) {
-        TextStyle captionStyle = Theme.of(context).textTheme.caption!;
+        TextStyle captionStyle = Theme.of(context).textTheme.bodySmall!;
         responsiveStyle = captionStyle.copyWith(fontSize: size * scale);
     } else {
         responsiveStyle = responsiveStyle.copyWith(fontSize: size * scale);
@@ -116,7 +116,7 @@ class ResponsiveText extends ResponsiveStatelessWidget {
         locale: get('locale'),
         softWrap: get('softWrap'),
         overflow: get('overflow') ?? TextOverflow.clip,
-        textScaleFactor: get('textScaleFactor'),
+        textScaler: get('textScaler'),
         maxLines: get('maxLines'),
         semanticsLabel: get('semanticsLabel'),
         textWidthBasis: get('textWidthBasis'),

@@ -1,3 +1,11 @@
+## 0.0.6
+
+* Updated pubspec environment to 4.0.0 max
+* Replaced textScaleFactor with the textScaler property
+* Fixed "enabled" error in ResponsiveCupertinoTextField
+* Fixed "maxLengthEnforcement" in ResponsiveTextField
+* Removed height reference from ResponsiveTextFormField
+
 ## 0.0.5
 
 * Added "ButtonTheme" ResponsiveWidget
@@ -6,7 +14,7 @@
 * Added "Switch" ResponsiveWidget
 * Added "Checkbox" ResponsiveWidget
 * Added "TextFormField" ResponsiveWidget
-* Added "CircularAvatar" ResponsiveWidget
+* Added "CircleAvatar" ResponsiveWidget
 
 ## 0.0.4
 

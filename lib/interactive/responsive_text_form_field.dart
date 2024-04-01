@@ -152,7 +152,6 @@ class ResponsiveTextFormField extends ResponsiveStatelessWidget {
   @override
   Widget getResponsiveWidget(BuildContext context, ScreenType screenType, double scale) {
 
-      double height = 1.0;
       double fontSize = 0.0;
       double? newFontSize;
 
@@ -167,12 +166,6 @@ class ResponsiveTextFormField extends ResponsiveStatelessWidget {
         fontSize = responsiveStyle.fontSize!;
       } else {
         fontSize = defaultStyle.fontSize!;
-      }
-
-      if(responsiveStyle.height != null) {
-        height = responsiveStyle.height!;
-      } else if(defaultStyle.height != null) {
-        height = defaultStyle.height!;
       }
       
       newFontSize = fontSize * scale;
