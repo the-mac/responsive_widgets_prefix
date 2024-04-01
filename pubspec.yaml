@@ -1,6 +1,6 @@
 name: responsive_widgets_prefix
 description: Responsive Widgets Prefix allows you to add the "Responsive" prefix to any widget that needs scaling or font size increases (for varying device screen sizes).
-version: 0.0.6
+version: 0.0.7
 homepage: https://github.com/the-mac/responsive_widgets_prefix
 
 environment:

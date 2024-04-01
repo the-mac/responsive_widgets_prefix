@@ -48,6 +48,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            ResponsiveImage.asset(
+              'assets/images/the-mac-avatar.jpeg',
+              width: 120,
+              scaleLargeTablet: 1.0,
+              scaleTelevision: 1.0,
+            ),
             ResponsiveText('You have pushed the button this many times:'),
             ResponsiveText('$_counter', key: const Key('counter-page-text'), style: Theme.of(context).textTheme.headline4, scaleMediumTablet: 4),
           ],

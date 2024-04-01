@@ -1,3 +1,9 @@
+## 0.0.7
+
+* Updated README with added ProgressIndicator
+* Updated ResponsiveImage to allow for scaling
+* Added "CircularProgressIndicator" ResponsiveWidget
+
 ## 0.0.6
 
 * Updated pubspec environment to 4.0.0 max

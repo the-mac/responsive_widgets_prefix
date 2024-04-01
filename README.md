@@ -5,12 +5,6 @@
   <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://img.shields.io/pub/points/responsive_widgets_prefix?logo=dart"></a>
 </p>
 
-<p align="center">
-  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix"><img src="https://img.shields.io/pub/v/responsive_widgets_prefix.svg"></a>
-  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://badges.bar/responsive_widgets_prefix/likes"></a>
-  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://badges.bar/responsive_widgets_prefix/popularity"></a>
-  <a href="https://pub.dartlang.org/packages/responsive_widgets_prefix/score"><img src="https://badges.bar/responsive_widgets_prefix/pub%20points"></a>
-</p>
 
 Responsive Widgets Prefix allows you to add the "Responsive" prefix to any widget that needs scaling or font size increases (for varying device screen sizes).
 
@@ -83,16 +77,16 @@ Note: The widgets below are currently supported, but [we welcome widget requests
 | AssetImage    | Image         | IconButton    | Switch        |  Container    | MaterialApp   |
 | Text          | Icon          | Checkbox      | FAButton (FAB)|  Padding      | CupertinoApp  |
 | Card          | CircleAvatar  | ButtonTheme   | TextFormField |               | AppBar |
-|               |               | Slider        | TextField     | 
+|               | ProgressIndicator | Slider        | TextField     | 
 |               |               | TextButton    | CupertinoTextField |  |
 
 Note: The following widgets are currently not supported, but click on the link below to create an issue for a new responsive widget request.
 
 |    Visual     |  Interactive  |
 | ------------- | ------------- |
-|  [CircularProgressIndicator](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=CircularProgressIndicator) | [Checkbox](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=Checkbox)
 | [Tooltip](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=Tooltip)  | [FormField](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=FormField)|
 | [CupertinoActivityIndicator](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=CupertinoActivityIndicator) | [CupertinoButton](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=CupertinoButton)|
+|   | [Checkbox](https://github.com/the-mac/responsive_widgets_prefix/issues/new?assignees=&labels=enhancement&template=responsive-widget-request.md&title=Checkbox) |
 
 ## Getting started
 

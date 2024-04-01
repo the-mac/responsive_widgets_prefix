@@ -1,3 +1,4 @@
+
 import 'dart:io';
 import 'dart:typed_data';
 
@@ -71,7 +72,28 @@ class ResponsiveImage extends _ResponsiveImage {
     gaplessPlayback = false,
     isAntiAlias = false,
     filterQuality = FilterQuality.low,
-  }) : super() {
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
+  }) : super(
+    scaleWatch: scaleWatch,
+    scaleSmallPhone: scaleSmallPhone, 
+    scaleMediumPhone: scaleMediumPhone,
+    scaleLargePhone: scaleLargePhone, 
+    scaleSmallTablet: scaleSmallTablet,
+    scaleMediumTablet: scaleMediumTablet, 
+    scaleLargeTablet: scaleLargeTablet, 
+    scaleMediumDesktop: scaleMediumDesktop,
+    scaleLargeDesktop: scaleLargeDesktop, 
+    scaleTelevision: scaleTelevision
+  ) {
 
     set('key', key)
     .set('imageType', _ImageType.defaultImage)
@@ -152,7 +174,28 @@ class ResponsiveImage extends _ResponsiveImage {
     Map<String, String>? headers,
     int? cacheWidth,
     int? cacheHeight,
-  }) : super() {
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
+  }) : super(
+    scaleWatch: scaleWatch,
+    scaleSmallPhone: scaleSmallPhone, 
+    scaleMediumPhone: scaleMediumPhone,
+    scaleLargePhone: scaleLargePhone, 
+    scaleSmallTablet: scaleSmallTablet,
+    scaleMediumTablet: scaleMediumTablet, 
+    scaleLargeTablet: scaleLargeTablet, 
+    scaleMediumDesktop: scaleMediumDesktop,
+    scaleLargeDesktop: scaleLargeDesktop, 
+    scaleTelevision: scaleTelevision
+  ) {
 
     set('key', key)
     .set('imageType', _ImageType.networkImage)
@@ -232,7 +275,28 @@ class ResponsiveImage extends _ResponsiveImage {
     filterQuality = FilterQuality.low,
     int? cacheWidth,
     int? cacheHeight,
-  }) : super() {
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
+  }) : super(
+    scaleWatch: scaleWatch,
+    scaleSmallPhone: scaleSmallPhone, 
+    scaleMediumPhone: scaleMediumPhone,
+    scaleLargePhone: scaleLargePhone, 
+    scaleSmallTablet: scaleSmallTablet,
+    scaleMediumTablet: scaleMediumTablet, 
+    scaleLargeTablet: scaleLargeTablet, 
+    scaleMediumDesktop: scaleMediumDesktop,
+    scaleLargeDesktop: scaleLargeDesktop, 
+    scaleTelevision: scaleTelevision
+  ) {
 
     set('key', key)
     .set('imageType', _ImageType.fileImage)
@@ -410,7 +474,28 @@ class ResponsiveImage extends _ResponsiveImage {
     filterQuality = FilterQuality.low,
     int? cacheWidth,
     int? cacheHeight,
-  }) : super() {
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
+  }) : super(
+    scaleWatch: scaleWatch,
+    scaleSmallPhone: scaleSmallPhone, 
+    scaleMediumPhone: scaleMediumPhone,
+    scaleLargePhone: scaleLargePhone, 
+    scaleSmallTablet: scaleSmallTablet,
+    scaleMediumTablet: scaleMediumTablet, 
+    scaleLargeTablet: scaleLargeTablet, 
+    scaleMediumDesktop: scaleMediumDesktop,
+    scaleLargeDesktop: scaleLargeDesktop, 
+    scaleTelevision: scaleTelevision
+  ) {
 
     set('key', key)
     .set('name', name)
@@ -491,7 +576,28 @@ class ResponsiveImage extends _ResponsiveImage {
     filterQuality = FilterQuality.low,
     int? cacheWidth,
     int? cacheHeight,
-  }) : super() {
+    double scaleWatch = 0.1,
+    double scaleSmallPhone = 1.0,
+    double scaleMediumPhone = 1.0,
+    double scaleLargePhone = 1.5,
+    double scaleSmallTablet = 1.8,
+    double scaleMediumTablet = 2.0,
+    double scaleLargeTablet = 2.5,
+    double scaleMediumDesktop = 3.0,
+    double scaleLargeDesktop = 3.6,
+    double scaleTelevision = 4.2,
+  }) : super(
+    scaleWatch: scaleWatch,
+    scaleSmallPhone: scaleSmallPhone, 
+    scaleMediumPhone: scaleMediumPhone,
+    scaleLargePhone: scaleLargePhone, 
+    scaleSmallTablet: scaleSmallTablet,
+    scaleMediumTablet: scaleMediumTablet, 
+    scaleLargeTablet: scaleLargeTablet, 
+    scaleMediumDesktop: scaleMediumDesktop,
+    scaleLargeDesktop: scaleLargeDesktop, 
+    scaleTelevision: scaleTelevision
+  ) {
 
     set('key', key)
     .set('imageType', _ImageType.memoryImage)
